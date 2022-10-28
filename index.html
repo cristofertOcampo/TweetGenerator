@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tweet Generator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweet Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="welcome">Welcome</h2>
+      <div class="header-names">
+        <p>Edwim</p>
+        <div class="circle">
+          <p>E</p>
+        </div>
+      </div>
+    </header>
 
-  <header class="header">
-    <h2>Welcome</h2>
-    <p>Edwim</p>
-    <div><p>E</p></div>
-  </header>
+    <main class="main">
+      <form action="" method="" class="form">
+        <label class="labels" for="txtName">Type your name</label>
+        <input type="text" name="txtName" id="txtName" />
 
-  <main class="main">
-    <form action="" method="" class="form">
-      <label class="labels" for="txtName">Type your name</label>
-      <input type="text" name="txtName" id="txtName">
+        <label class="labels" for="txtComment">Comment</label>
+        <textarea class="textarea" name="txtComment" id="" cols="15" rows="10"></textarea>
 
-      <label class="labels" for="txtComment">Comment</label>
-      <textarea class="textarea" name="txtComment" id="" cols="15" rows="10"></textarea>
+        <p class="counter">Counter ➡ <span>280</span></p>
 
-      <p class="counter">Counter ➡ <span>280</span></p>
+        <button class="btn-send">Send</button>
+        <button class="converter">Capital letter</button>
+      </form>
 
-      <button class="btn-send">Send</button>
-      <button class="converter">Capital letter </button> 
-    </form>
+      <div>
+        <p class="result-comment">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          voluptatibus ipsam quidem, ut ex iure sapiente praesentium, illo,
+          tempora deserunt amet mollitia at! Ab nobis molestias, ipsam modi
+          iusto deserunt.
+        </p>
+      </div>
+    </main>
 
-    <div>
-      <p class="result-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatibus ipsam quidem, ut ex iure sapiente praesentium, illo, tempora deserunt amet mollitia at! Ab nobis molestias, ipsam modi iusto deserunt.</p>
-    </div>
-
-  </main>
-  
-
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
