@@ -9,6 +9,7 @@ const convert = document.getElementById("btn-convert");
 
 btnSend.addEventListener('click', sendTweet);
 txtComment.addEventListener('keyup', lettersCounter);
+convert.addEventListener('click',convertUpperAndLowerCase);
 
 function sendTweet(){
   let userName = txtName.value;
@@ -27,4 +28,16 @@ function lettersCounter(){
     counter.style.color = "#0c4876";
   }
   counter.textContent = remaining ;
+}
+
+function convertUpperAndLowerCase() {
+  if(convert.value === "true"){
+    txtComment.value = txtComment.value.toUpperCase();
+    convert.textContent = "Lower case";
+    convert.value = false;
+  }else{
+    txtComment.value = txtComment.value.toLowerCase();
+    convert.textContent = "Upper case";
+    convert.value = true;
+  }
 }
