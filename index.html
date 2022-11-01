@@ -11,36 +11,31 @@
     <header class="header">
       <h2 class="welcome">Welcome</h2>
       <div class="header-names">
-        <p>Edwim</p>
+        <p id="paragraph-name"></p>
         <div class="circle">
-          <p>E</p>
+          <p id="paragraph-initial">E</p>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <form action="" method="" class="form">
-        <label class="labels" for="txtName">Type your name</label>
-        <input class="input inputs" type="text" name="txtName" id="txtName" />
+      <div class="form">
+        <label class="labels" for="txt-name">Type your name</label>
+        <input class="input inputs" type="text" name="txt-name" id="txt-name" />
 
-        <label class="labels" for="txtComment">Comment</label>
-        <textarea class="textarea inputs" name="txtComment" id="" cols="15" rows="10"></textarea>
+        <label class="labels" for="txt-comment">Comment</label>
+        <textarea class="textarea inputs" name="txt-comment" id="txt-comment" cols="15" rows="10"></textarea>
 
         <p class="counter">Counter ➡ <span>280</span></p>
 
         <div class="buttons">
-          <button class="btn-send button">Send</button>
+          <button class="btn-send button" id="btn-send">Send</button>
           <button class="converter button">Upper case</button>
         </div>
-      </form>
+      </div>
 
       <div>
-        <p class="result-comment">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-          voluptatibus ipsam quidem, ut ex iure sapiente praesentium, illo,
-          tempora deserunt amet mollitia at! Ab nobis molestias, ipsam modi
-          iusto deserunt.
-        </p>
+        <p class="result-comment" id="result-comment"></p>
       </div>
     </main>
 
