@@ -4,13 +4,15 @@ const btnSend = document.getElementById("btn-send");
 const resultComment = document.getElementById("result-comment");
 const paragraphName = document.getElementById("paragraph-name");
 const paragraphInitial = document.getElementById("paragraph-initial");
-
-function sendTweet(){
-    let userName = txtName.value;
-    let userComment = txtComment.value;
-    paragraphName.textContent = userName;
-    resultComment.textContent = userComment;
-}
-
+const counter = document.getElementById("span-counter");
+const convert = document.getElementById("btn-convert");
 
 btnSend.addEventListener('click', sendTweet);
+
+function sendTweet(){
+  let userName = txtName.value;
+  let userComment = txtComment.value;
+  paragraphInitial.textContent = txtName.value.trim().charAt(0).toUpperCase();
+  paragraphName.textContent = userName;
+  resultComment.textContent = userComment;
+}

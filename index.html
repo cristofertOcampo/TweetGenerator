@@ -13,7 +13,7 @@
       <div class="header-names">
         <p id="paragraph-name"></p>
         <div class="circle">
-          <p id="paragraph-initial">E</p>
+          <p id="paragraph-initial"></p>
         </div>
       </div>
     </header>
@@ -24,13 +24,13 @@
         <input class="input inputs" type="text" name="txt-name" id="txt-name" />
 
         <label class="labels" for="txt-comment">Comment</label>
-        <textarea class="textarea inputs" name="txt-comment" id="txt-comment" cols="15" rows="10"></textarea>
+        <textarea class="textarea inputs" name="txt-comment" id="txt-comment" cols="15" rows="10" maxlength="280"></textarea>
 
-        <p class="counter">Counter ➡ <span>280</span></p>
+        <p class="counter">Counter ➡ <span id="span-counter">280</span></p>
 
         <div class="buttons">
           <button class="btn-send button" id="btn-send">Send</button>
-          <button class="converter button">Upper case</button>
+          <button class="converter button" id="btn-convert" value="true">Upper case</button>
         </div>
       </div>
 
