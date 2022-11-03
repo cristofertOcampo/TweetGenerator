@@ -79,6 +79,11 @@ div .circle{
 
 .inputs{
   border-radius: 6px;
+  padding-left: 10px;
+}
+
+.textarea{
+  padding-top: 8px;
 }
 
 .counter{
